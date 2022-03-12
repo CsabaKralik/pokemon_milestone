@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: cornsilk;
 }
 .pokemon {
   border: 2px black ridge;
@@ -15,7 +16,7 @@ body {
 }
 .pokemon-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 5px;
 }
 .pokemon-name {
@@ -47,11 +48,16 @@ body {
   transform: translateX(-50%);
   padding-bottom: 2rem;
 }
-.search-form-name {
+.search-form-field {
   width: 15%;
+  border: none;
   height: 2rem;
+  margin: 1rem;
+  box-shadow: 1px 1px 1px 1px #626262;
 }
-.search-form-type {
-  width: 15%;
-  height: 2rem;
+.search-form-button {
+  height: 2.2rem;
+  border: none;
+  border-radius: 2px;
+  background-color: burlywood;
 }

@@ -22,15 +22,17 @@ const SearchForm = (props) => {
         type="text"
         placeholder="name of pokemon"
         onChange={handleNameChange}
-        className="search-form-name"
+        className="search-form-field"
       />
       <input
         type="text"
         placeholder="type of pokemon"
         onChange={handleTypeChange}
-        className="search-form-type"
+        className="search-form-field"
       />
-      <button type="submit">Search</button>
+      <button type="submit" className="search-form-button">
+        SEARCH
+      </button>
     </form>
   );
 };
