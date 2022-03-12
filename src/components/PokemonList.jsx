@@ -2,7 +2,7 @@ import "../pokedex.json";
 import Pokemon from "./Pokemon";
 
 function PokemonList(props) {
-  const pokemons = props.pokemons.slice(0, 50);
+  const pokemons = props.pokemons.slice(0, 100);
   const pokemonsDisplay = [];
   for (const pokemon of pokemons) {
     pokemonsDisplay.push(
